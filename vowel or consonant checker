@@ -1,0 +1,26 @@
+//programme to find whether an alphabet is a vowel or consonant using switch case in c++ .
+#include <iostream>
+using namespace std;
+int main{
+char ch;
+cin>>ch;
+switch(ch){
+case 'a':
+cout<<"VOWEL"<<endl;
+break;
+case 'e':
+cout<<"VOWEL"<<endl;
+break;
+case 'i':
+cout<<"VOWEL"<<endl;
+break;
+case 'o':
+cout<<"VOWEL"<<endl;
+break;
+case 'u':
+cout<<"VOWEL"<<endl;
+break;
+defult:
+cout<<"IT IS A CONSONANT"<<endl;}
+return 0;
+}
