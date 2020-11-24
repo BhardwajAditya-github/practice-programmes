@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{char alphbts;
+for(alphbts='a';alphbts<='z';alphbts++)
+{printf("%c",alphbts);}
+return 0;}
