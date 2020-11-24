@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int number,i;
+    int limit,result;
+    printf("Enter number whose table u want \n");
+    scanf("%d",&number);
+    printf("Enter limit upto which u want to multiply \n");
+    scanf("%d",&limit);
+    for(i=0;i<=limit;i++)
+    {result=number*i;
+
+    printf("%d*%d=%d \n",number,i,result);}
+
+    return 0;
+}
