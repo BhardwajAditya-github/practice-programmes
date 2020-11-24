@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{int lim_it; 
+printf("Enter limit upto  which u want natural numbers \n");
+scanf("%d",&lim_it);
+for(int i=1;i<=lim_it;i++)
+{ printf("%d",i);}
+return 0;
+}
