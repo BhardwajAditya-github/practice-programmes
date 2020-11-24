@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{int num_br,sum=0;
+printf("Enter number upto which u want sum of even numbers\n");
+scanf("%d",&num_br);
+for(int i=1;i<=num_br;i++)
+{if(i%2==0){sum=sum+i;}
+}printf("%d",sum);
+return 0;}
