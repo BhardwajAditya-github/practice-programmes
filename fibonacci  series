@@ -1,0 +1,27 @@
+#include<stdio.h>
+int series(int);
+ 
+int main()
+{
+   int n, i = 0, limit;
+   printf("Enter no. of terms u want in ur series:");
+    scanf("%d",&n);
+   printf("Fibonacci series= ");
+  for(limit = 1 ; limit <= n ; limit++ )
+   {
+      printf("%d", series(i));
+      i++; 
+   }
+ 
+   return 0;
+}
+ 
+int series(int n)
+{
+   if ( n == 0 )
+      return 0;
+   else if ( n == 1 )
+      return 1;
+   else
+      return ( series(n-1) + series(n-2) );
+} 
