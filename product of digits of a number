@@ -1,0 +1,27 @@
+ #include <stdio.h>
+#include<math.h>
+int main()
+{
+   printf("give no.");
+   int n,d1,d2,d3,d4,d5,product,digits;
+   scanf("%d",&n);
+   digits=log10(n)+1;
+   d1=n%10;
+   d2=(n%100)/10;
+   d3=(n%1000)/100;
+   d4=(n%10000)/1000;
+   d5=(n%100000)/10000;
+if(digits==2)
+product=d1*d2;
+else if(digits==3)
+product=d1*d2*d3;
+else if(digits==4)
+product=d1*d2*d3*d4;
+else if(digits==5)
+product=d1*d2*d3*d4*d5;
+else
+product=d1;
+printf("product=%d",product);
+    return 0;
+}
+
