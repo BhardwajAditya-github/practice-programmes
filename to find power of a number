@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main()
+{
+  int no,power,i;
+  int result =1;
+  printf("Enter no\n");
+  scanf("%d",&no);
+  printf("Enter power\n");
+  scanf("%d",&power);
+  for(i=1;i<=power;i++){
+      result=result*no;
+  }
+  printf("%d",result);
+  return 0;
+}
