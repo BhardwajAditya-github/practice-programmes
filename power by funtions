@@ -1,0 +1,21 @@
+#include<stdio.h>
+int power(int n,int p);
+int main()
+{ 
+    int n,p,result;
+    printf("enter number\n");
+    scanf("%d",&n);
+    printf("enter power\n");
+    scanf("%d",&p);
+    
+    result=power(n,p);
+    printf("result=%d",result);
+}
+int power(int n,int p){
+    int i;int x=1;
+    for(i=0;i<p;i++){
+        x=x*n;
+        
+    }
+    return x;
+}
