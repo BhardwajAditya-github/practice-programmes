@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(void){
+int d1,v1,d2,v2,p;
+scanf("%d%d%d%d%d",&d1,&v1,&d2,&v2,&p);
+
+int min=(d1>=d2)?d2:d1;
+int max=(d1>=d2)?d1:d2;
+int min_vacc=(v1>=v2)?v2:v1;
+int max_vacc=(v1>=v2)?v1:v2;
+
+int days,vaccine=0;
+while(1){
+days++;
+if(days>=min){
+if(days>=max){
+vaccine=min_vacc+max_vacc;
+}
+else
+vaccine=vaccine+min_vacc;
+
+if(vaccine>=p)
+break;
+}
+}
+printf("%d",days);
+return 0;
+
+}
