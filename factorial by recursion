@@ -1,0 +1,20 @@
+#include <stdio.h>
+int fact(int n);
+int main()
+{
+    int num,result;
+    printf("give number");
+    scanf("%d",&num);
+    result=fact(num);
+    printf("%d",result);
+
+    return 0;
+}
+int fact(int n){
+    int factorial;
+    if (n>=1)
+    return n*fact(n-1);
+    else
+    return 1;
+    
+}
